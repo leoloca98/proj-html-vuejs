@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <Header />
+    <Services />
+    <Company />
     <Main />
     <Footer />
   </div>
@@ -20,6 +22,8 @@
 
 */
 import Header from "@/components/Header.vue";
+import Services from "@/components/Services.vue";
+import Company from "@/components/Company.vue";
 import Main from "@/components/Main.vue";
 import Footer from "@/components/Footer.vue";
 
@@ -27,6 +31,8 @@ export default {
   name: "App",
   components: {
     Header,
+    Services,
+    Company,
     Main,
     Footer,
   },
@@ -34,5 +40,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../src/assets/scss/style.scss";
+@import "../src/assets/scss/_vars.scss";
 </style>
