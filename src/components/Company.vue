@@ -4,8 +4,10 @@
     class="d-flex justify-content-center align-items-center"
   >
     <div class="row p-0 m-0">
-      <div class="col-6 network">
-        <div class="general-container"></div>
+      <div
+        class="col-6 network d-flex align-items-center justify-content-center"
+      >
+        <div class="network-info"></div>
       </div>
       <div class="col-6 about-bg"></div>
     </div>
@@ -32,6 +34,13 @@ export default {
 
     .network {
       background-color: $CompanyBg;
+
+      .network-info {
+        height: 600px;
+        width: 50%;
+        margin-left: 320px;
+        background-color: sandybrown;
+      }
     }
 
     .about-bg {
