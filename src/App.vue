@@ -3,7 +3,9 @@
     <Header />
     <Services />
     <Company />
-    <Main />
+    <Projects />
+    <Results />
+    <Touch />
     <Footer />
   </div>
 </template>
@@ -24,7 +26,9 @@
 import Header from "@/components/Header.vue";
 import Services from "@/components/Services.vue";
 import Company from "@/components/Company.vue";
-import Main from "@/components/Main.vue";
+import Projects from "@/components/Projects.vue";
+import Results from "@/components/Results.vue";
+import Touch from "@/components/Touch.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
@@ -33,7 +37,9 @@ export default {
     Header,
     Services,
     Company,
-    Main,
+    Projects,
+    Results,
+    Touch,
     Footer,
   },
 };
