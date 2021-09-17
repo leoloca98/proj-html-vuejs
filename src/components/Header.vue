@@ -33,13 +33,16 @@
           <div class="col-4">
             <img class="img-logo" src="../assets/img/logo.png" alt="Logo" />
           </div>
-          <div class="col-8 d-flex justify-content-between">
-            <li>HOME</li>
-            <li>SERVICE</li>
-            <li>ABOUT</li>
-            <li>PROJECTS</li>
-            <li>RESULTS</li>
-            <li><span class="button-touch">GET IN TOUCH</span></li>
+          <div class="col-8 d-flex justify-content-between align-items-center">
+            <li
+              v-for="(item, index) in topBarLinks"
+              :key="index + '%'"
+              :class="item.list == 'GET IN TOUCH' ? 'button-touch' : ''"
+            >
+              <a href="#" class="link">
+                {{ item.list }}
+              </a>
+            </li>
           </div>
         </div>
         <div class="row something justify-content-center align-items-center">
@@ -51,8 +54,12 @@
               No matter what your company needs, we will be ready to assist you
               in the best possible way
             </p>
-            <span class="me-4 button-touch">GET IN TOUCH</span>
-            <span class="ms-4 button-empty">READ MORE</span>
+            <span class="me-4 button-touch"
+              ><a class="text-white" href="#">GET IN TOUCH</a></span
+            >
+            <span class="ms-4 button-empty"
+              ><a class="principal-color" href="#">READ MORE</a></span
+            >
           </div>
         </div>
       </div>
@@ -63,6 +70,30 @@
 <script>
 export default {
   name: "Header",
+  data() {
+    return {
+      topBarLinks: [
+        {
+          list: "HOME",
+        },
+        {
+          list: "SERVICES",
+        },
+        {
+          list: "ABOUT",
+        },
+        {
+          list: "PROJECTS",
+        },
+        {
+          list: "RESULTS",
+        },
+        {
+          list: "GET IN TOUCH",
+        },
+      ],
+    };
+  },
 };
 </script>
 
