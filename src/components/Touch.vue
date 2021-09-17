@@ -1,6 +1,8 @@
 <template>
-  <section id="touch" class="d-flex justify-content-center align-items-center">
-    <div class="general-container">
+  <section id="touch" class="">
+    <div
+      class="general-container d-flex justify-content-center align-items-center"
+    >
       <div class="block">
         <div class="row">
           <div class="col-8 border border-danger"></div>

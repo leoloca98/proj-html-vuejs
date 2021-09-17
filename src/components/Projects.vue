@@ -1,9 +1,8 @@
 <template>
-  <section
-    id="projects"
-    class="d-flex justify-content-center align-items-center"
-  >
-    <div class="general-container">
+  <section id="projects" class="">
+    <div
+      class="general-container d-flex justify-content-center align-items-center"
+    >
       <div class="row block flex-column">
         <div class="col-4 projects-menu text-center">
           <div class="principal-color fw-bolder pb-3">

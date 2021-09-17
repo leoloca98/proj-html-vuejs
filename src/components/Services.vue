@@ -1,9 +1,8 @@
 <template>
-  <section
-    id="services"
-    class="d-flex justify-content-center align-items-center"
-  >
-    <div class="general-container">
+  <section id="services" class="">
+    <div
+      class="general-container d-flex justify-content-center align-items-center"
+    >
       <div class="row row-block flex-column">
         <div class="col business-area mb-5">
           <div class="row row-business">
@@ -125,7 +124,7 @@ export default {
 
   .row-block {
     width: 1050px;
-    height: 100%;
+    height: 80%;
 
     .business-area {
       min-height: 180px;

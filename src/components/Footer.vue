@@ -27,7 +27,7 @@ footer {
 
     .block {
       height: 350px;
-      width: 1100px;
+      width: 1050px;
       background-color: limegreen;
     }
   }
