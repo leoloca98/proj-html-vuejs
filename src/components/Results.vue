@@ -2,7 +2,11 @@
   <section id="results">
     <div class="row flex-column">
       <div class="col-8 chess"></div>
-      <div class="col-4 logos"></div>
+      <div class="col-4 logos">
+        <ul>
+          <li></li>
+        </ul>
+      </div>
     </div>
   </section>
 </template>

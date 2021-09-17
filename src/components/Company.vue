@@ -1,7 +1,7 @@
 <template>
   <section
     id="company"
-    class="d-flex justify-content-center align-items-center"
+    class="d-flex justify-content-center align-items-center text-white"
   >
     <div class="row row-block p-0 m-0">
       <div
@@ -18,12 +18,20 @@
               advice, risk advice, taxes and related services to select clients
             </p>
           </div>
-          <div class="row flex-wrap">
+          <div class="row row-card flex-wrap mb-3">
             <div
-              v-for="(netwok, index) in networks"
+              v-for="(network, index) in networks"
               :key="index + network.title"
               class="col-6 card"
-            ></div>
+            >
+              <i :class="`fa-` + network.icon" class="fas flex"></i>
+              <span class="fw-bolder">{{ network.title }}</span>
+              <p>{{ network.lorem }}</p>
+            </div>
+          </div>
+          <div class="button-area">
+            <span class="me-4 button-touch">GET IN TOUCH</span>
+            <span class="ms-4 button-empty">READ MORE</span>
           </div>
         </div>
       </div>
@@ -74,7 +82,6 @@ export default {
   .row-block {
     width: 100%;
     height: 100%;
-    border: 1px dashed red;
 
     .network {
       background-color: $CompanyBg;
@@ -83,7 +90,15 @@ export default {
         height: 600px;
         width: 50%;
         margin-left: 320px;
-        background-color: sandybrown;
+
+        .row-card {
+          height: 50%;
+          width: 100%;
+
+          .card {
+            background-color: transparent;
+          }
+        }
       }
     }
 
