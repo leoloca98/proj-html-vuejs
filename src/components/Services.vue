@@ -51,7 +51,7 @@
                     align-items-center
                   "
                 >
-                  <img :src="service.icon" class="mb-3" />
+                  <img :src="service.icon" class="mb-3 icon-size" />
                   <div class="fw-bold fs-5 pb-3">{{ service.title }}</div>
                   <div>{{ service.lorem }}</div>
                 </div>
@@ -74,37 +74,37 @@ export default {
     return {
       services: [
         {
-          icon: "@/assets/img/svg/svg-1.svg",
+          icon: require(`../assets/img/svg/svg-1.svg`),
           title: "Audit & Assurance",
           lorem: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
           id: 1001,
         },
         {
-          icon: "@/assets/img/svg/svg-2.svg",
+          icon: require(`../assets/img/svg/svg-2.svg`),
           title: "Financial Advisory",
           lorem: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
           id: 1002,
         },
         {
-          icon: "@/assets/img/svg/svg-3.svg",
+          icon: require(`../assets/img/svg/svg-3.svg`),
           title: "Analytics and M&A",
           lorem: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
           id: 1003,
         },
         {
-          icon: "@/assets/img/svg/svg-4.svg",
+          icon: require(`../assets/img/svg/svg-4.svg`),
           title: "Middle Marketing",
           lorem: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
           id: 1004,
         },
         {
-          icon: "@/assets/img/svg/svg-5.svg",
+          icon: require(`../assets/img/svg/svg-5.svg`),
           title: "Legal Consulting",
           lorem: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
           id: 1005,
         },
         {
-          icon: "@/assets/img/svg/svg-6.svg",
+          icon: require(`../assets/img/svg/svg-6.svg`),
           title: "Regulatory Risk",
           lorem: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
           id: 1006,
