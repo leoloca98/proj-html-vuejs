@@ -31,7 +31,7 @@
           "
         >
           <div class="col-4">
-            <img src="../assets/img/logo.png" alt="Logo" />
+            <img class="img-logo" src="../assets/img/logo.png" alt="Logo" />
           </div>
           <div class="col-8 d-flex justify-content-between">
             <li>HOME</li>
@@ -88,11 +88,8 @@ header {
     .top-bar-menu {
       height: 55px;
       width: 100%;
-
-      img {
-        max-height: 40px;
-      }
     }
+
     .something {
       height: calc(85vh - 55px);
 

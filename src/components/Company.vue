@@ -24,7 +24,10 @@
               :key="index + network.title"
               class="col-6 card"
             >
-              <i :class="`fa-` + network.icon" class="fas flex"></i>
+              <i
+                :class="`fa-` + network.icon"
+                class="fas flex principal-color"
+              ></i>
               <span class="fw-bolder">{{ network.title }}</span>
               <p>{{ network.lorem }}</p>
             </div>

@@ -93,7 +93,7 @@ export default {
   width: 100%;
 
   .block {
-    height: 600px;
+    height: 510px;
     width: 1100px;
 
     .row {
